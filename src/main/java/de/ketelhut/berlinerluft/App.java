@@ -30,7 +30,7 @@ public class App {
 
 		// add training data to training set (logical OR function)
 		// first array is input, second array output
-		trainingSet.addRow(new DataSetRow(new double[] { 0, 0 }, new double[] { 0 }));
+		trainingSet.addRow(new DataSetRow(new double[] { 0, 0 }, new double[] {-1 }));
 		trainingSet.addRow(new DataSetRow(new double[] { 1, 1 }, new double[] { 1 }));
 		trainingSet.addRow(new DataSetRow(new double[] { 1, 0 }, new double[] { 1 }));
 		trainingSet.addRow(new DataSetRow(new double[] { 1, 1 }, new double[] { 1 }));
@@ -41,7 +41,7 @@ public class App {
 			// 0.1 => fail
 			// 0.2 => fail
 			// >0.3 => suc
-			neuralNetwork.setInput(0.3, 0);
+			neuralNetwork.setInput(0.3, 0.3);
 			// calculate network
 			neuralNetwork.calculate();
 			// get network output
