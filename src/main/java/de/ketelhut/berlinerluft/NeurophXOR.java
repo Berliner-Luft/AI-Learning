@@ -9,6 +9,11 @@ import org.neuroph.nnet.learning.BackPropagation;
 import org.neuroph.util.ConnectionFactory;
 import org.neuroph.util.NeuralNetworkType;
 
+/**
+ * 
+ * @author http://www.baeldung.com/neuroph 
+ *
+ */
 public class NeurophXOR {
 	   public static NeuralNetwork<BackPropagation> assembleNeuralNetwork() {
 	
